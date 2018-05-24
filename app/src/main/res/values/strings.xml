@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">ExpandableList</string>
+  <string name="check_all">查看全部</string>
+  <string name="back">收起列表</string>
+</resources>

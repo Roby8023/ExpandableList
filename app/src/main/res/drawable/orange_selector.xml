@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <!-- 设置按钮的选择器 -->
+  <item android:state_pressed="true">
+    <shape android:shape="rectangle">
+
+      <!-- 填充的颜色 -->
+
+      <solid android:color="#c98d32"/>
+      <!--
+      android:radius 弧形的半径-->
+
+      <!--<corners android:radius="6dp" />-->
+
+    </shape>
+  </item>
+  <item android:state_pressed="false">
+    <shape android:shape="rectangle">
+
+      <!-- 填充的颜色 -->
+
+      <solid android:color="#ffda61"/>
+      <!--
+      android:radius 弧形的半径 -->
+
+      <!--<corners android:radius="6dp" />-->
+
+    </shape>
+  </item>
+
+</selector>

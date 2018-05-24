@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.raven.expandablelist.widget.InertiaScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.raven.expandablelist.MainActivity"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:paddingBottom="30dp"
+      >
+
+    <!--Grid-->
+    <com.raven.expandablelist.widget.NoScrollRecyclerView
+        android:id="@+id/rv_main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <TextView
+          android:id="@+id/tv_check_all_grid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="20dp"
+          android:gravity="center"
+          android:padding="12dp"
+          android:text="@string/check_all"
+          android:textColor="@color/colorPrimary"
+          />
+    </RelativeLayout>
+    <!--middle line-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#6cffa4"
+        />
+
+    <!--List-->
+
+    <include layout="@layout/header_view"/>
+
+    <com.raven.expandablelist.widget.NoScrollRecyclerView
+        android:id="@+id/rv_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <TextView
+          android:id="@+id/tv_check_all"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="20dp"
+          android:gravity="center"
+          android:padding="12dp"
+          android:text="@string/check_all"
+          android:textColor="@color/colorPrimary"
+          />
+    </RelativeLayout>
+  </LinearLayout>
+
+</com.raven.expandablelist.widget.InertiaScrollView>
+
